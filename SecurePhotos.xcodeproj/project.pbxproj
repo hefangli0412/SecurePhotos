@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD60197F1BA8CBB600849F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD60197E1BA8CBB600849F1F /* main.m */; };
+		CD6019821BA8CBB700849F1F /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019811BA8CBB700849F1F /* MTAppDelegate.m */; };
+		CD6019881BA8CBB700849F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6019861BA8CBB700849F1F /* Main.storyboard */; };
+		CD60198A1BA8CBB700849F1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6019891BA8CBB700849F1F /* Images.xcassets */; };
+		CD60198D1BA8CBB700849F1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD60198B1BA8CBB700849F1F /* LaunchScreen.xib */; };
+		CD6019991BA8CBB700849F1F /* SecurePhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019981BA8CBB700849F1F /* SecurePhotosTests.m */; };
+		CD6019A31BA8CBE000849F1F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6019A21BA8CBE000849F1F /* Security.framework */; };
+		CD6019A51BA8CBEC00849F1F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6019A41BA8CBEC00849F1F /* MobileCoreServices.framework */; };
+		CD6019AB1BA8CC9A00849F1F /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019A81BA8CC9A00849F1F /* SSKeychain.m */; };
+		CD6019AC1BA8CC9A00849F1F /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019AA1BA8CC9A00849F1F /* SSKeychainQuery.m */; };
+		CD6019B91BA8CFB800849F1F /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019B01BA8CFB800849F1F /* RNCryptor.m */; };
+		CD6019BA1BA8CFB800849F1F /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019B41BA8CFB800849F1F /* RNCryptorEngine.m */; };
+		CD6019BB1BA8CFB800849F1F /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019B61BA8CFB800849F1F /* RNDecryptor.m */; };
+		CD6019BC1BA8CFB800849F1F /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019B81BA8CFB800849F1F /* RNEncryptor.m */; };
+		CD6019BF1BA8D06000849F1F /* MTPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019BE1BA8D06000849F1F /* MTPhotosViewController.m */; };
+		CD6019C21BA8D09000849F1F /* MTPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019C11BA8D09000849F1F /* MTPhotoCollectionViewCell.m */; };
+		CD6019C51BA8D0DF00849F1F /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6019C41BA8D0DF00849F1F /* MTViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD6019931BA8CBB700849F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6019711BA8CBB600849F1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6019781BA8CBB600849F1F;
+			remoteInfo = SecurePhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD6019791BA8CBB600849F1F /* SecurePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD60197D1BA8CBB600849F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD60197E1BA8CBB600849F1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD6019801BA8CBB600849F1F /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		CD6019811BA8CBB700849F1F /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		CD6019871BA8CBB700849F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD6019891BA8CBB700849F1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD60198C1BA8CBB700849F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD6019921BA8CBB700849F1F /* SecurePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecurePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6019971BA8CBB700849F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6019981BA8CBB700849F1F /* SecurePhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurePhotosTests.m; sourceTree = "<group>"; };
+		CD6019A21BA8CBE000849F1F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CD6019A41BA8CBEC00849F1F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CD6019A71BA8CC9A00849F1F /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		CD6019A81BA8CC9A00849F1F /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		CD6019A91BA8CC9A00849F1F /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		CD6019AA1BA8CC9A00849F1F /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		CD6019AE1BA8CFB800849F1F /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		CD6019AF1BA8CFB800849F1F /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		CD6019B01BA8CFB800849F1F /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		CD6019B11BA8CFB800849F1F /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		CD6019B21BA8CFB800849F1F /* RNCryptor+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Swift.h"; sourceTree = "<group>"; };
+		CD6019B31BA8CFB800849F1F /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		CD6019B41BA8CFB800849F1F /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		CD6019B51BA8CFB800849F1F /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		CD6019B61BA8CFB800849F1F /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		CD6019B71BA8CFB800849F1F /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		CD6019B81BA8CFB800849F1F /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		CD6019BD1BA8D06000849F1F /* MTPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPhotosViewController.h; sourceTree = "<group>"; };
+		CD6019BE1BA8D06000849F1F /* MTPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPhotosViewController.m; sourceTree = "<group>"; };
+		CD6019C01BA8D09000849F1F /* MTPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		CD6019C11BA8D09000849F1F /* MTPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		CD6019C31BA8D0DF00849F1F /* MTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		CD6019C41BA8D0DF00849F1F /* MTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD6019761BA8CBB600849F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6019A51BA8CBEC00849F1F /* MobileCoreServices.framework in Frameworks */,
+				CD6019A31BA8CBE000849F1F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD60198F1BA8CBB700849F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD6019701BA8CBB600849F1F = {
+			isa = PBXGroup;
+			children = (
+				CD6019A41BA8CBEC00849F1F /* MobileCoreServices.framework */,
+				CD6019A21BA8CBE000849F1F /* Security.framework */,
+				CD60197B1BA8CBB600849F1F /* SecurePhotos */,
+				CD6019951BA8CBB700849F1F /* SecurePhotosTests */,
+				CD60197A1BA8CBB600849F1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD60197A1BA8CBB600849F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD6019791BA8CBB600849F1F /* SecurePhotos.app */,
+				CD6019921BA8CBB700849F1F /* SecurePhotosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD60197B1BA8CBB600849F1F /* SecurePhotos */ = {
+			isa = PBXGroup;
+			children = (
+				CD6019801BA8CBB600849F1F /* MTAppDelegate.h */,
+				CD6019811BA8CBB700849F1F /* MTAppDelegate.m */,
+				CD6019C31BA8D0DF00849F1F /* MTViewController.h */,
+				CD6019C41BA8D0DF00849F1F /* MTViewController.m */,
+				CD6019BD1BA8D06000849F1F /* MTPhotosViewController.h */,
+				CD6019BE1BA8D06000849F1F /* MTPhotosViewController.m */,
+				CD6019C01BA8D09000849F1F /* MTPhotoCollectionViewCell.h */,
+				CD6019C11BA8D09000849F1F /* MTPhotoCollectionViewCell.m */,
+				CD6019861BA8CBB700849F1F /* Main.storyboard */,
+				CD6019891BA8CBB700849F1F /* Images.xcassets */,
+				CD60198B1BA8CBB700849F1F /* LaunchScreen.xib */,
+				CD6019A61BA8CC7700849F1F /* SSKeychain */,
+				CD6019AD1BA8CEEB00849F1F /* RNCryptor */,
+				CD60197C1BA8CBB600849F1F /* Supporting Files */,
+			);
+			path = SecurePhotos;
+			sourceTree = "<group>";
+		};
+		CD60197C1BA8CBB600849F1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD60197D1BA8CBB600849F1F /* Info.plist */,
+				CD60197E1BA8CBB600849F1F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD6019951BA8CBB700849F1F /* SecurePhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6019981BA8CBB700849F1F /* SecurePhotosTests.m */,
+				CD6019961BA8CBB700849F1F /* Supporting Files */,
+			);
+			path = SecurePhotosTests;
+			sourceTree = "<group>";
+		};
+		CD6019961BA8CBB700849F1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD6019971BA8CBB700849F1F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD6019A61BA8CC7700849F1F /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				CD6019A71BA8CC9A00849F1F /* SSKeychain.h */,
+				CD6019A81BA8CC9A00849F1F /* SSKeychain.m */,
+				CD6019A91BA8CC9A00849F1F /* SSKeychainQuery.h */,
+				CD6019AA1BA8CC9A00849F1F /* SSKeychainQuery.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
+		CD6019AD1BA8CEEB00849F1F /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				CD6019AE1BA8CFB800849F1F /* RNCryptor-Prefix.pch */,
+				CD6019AF1BA8CFB800849F1F /* RNCryptor.h */,
+				CD6019B01BA8CFB800849F1F /* RNCryptor.m */,
+				CD6019B11BA8CFB800849F1F /* RNCryptor+Private.h */,
+				CD6019B21BA8CFB800849F1F /* RNCryptor+Swift.h */,
+				CD6019B31BA8CFB800849F1F /* RNCryptorEngine.h */,
+				CD6019B41BA8CFB800849F1F /* RNCryptorEngine.m */,
+				CD6019B51BA8CFB800849F1F /* RNDecryptor.h */,
+				CD6019B61BA8CFB800849F1F /* RNDecryptor.m */,
+				CD6019B71BA8CFB800849F1F /* RNEncryptor.h */,
+				CD6019B81BA8CFB800849F1F /* RNEncryptor.m */,
+			);
+			name = RNCryptor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD6019781BA8CBB600849F1F /* SecurePhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD60199C1BA8CBB700849F1F /* Build configuration list for PBXNativeTarget "SecurePhotos" */;
+			buildPhases = (
+				CD6019751BA8CBB600849F1F /* Sources */,
+				CD6019761BA8CBB600849F1F /* Frameworks */,
+				CD6019771BA8CBB600849F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecurePhotos;
+			productName = SecurePhotos;
+			productReference = CD6019791BA8CBB600849F1F /* SecurePhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD6019911BA8CBB700849F1F /* SecurePhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD60199F1BA8CBB700849F1F /* Build configuration list for PBXNativeTarget "SecurePhotosTests" */;
+			buildPhases = (
+				CD60198E1BA8CBB700849F1F /* Sources */,
+				CD60198F1BA8CBB700849F1F /* Frameworks */,
+				CD6019901BA8CBB700849F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6019941BA8CBB700849F1F /* PBXTargetDependency */,
+			);
+			name = SecurePhotosTests;
+			productName = SecurePhotosTests;
+			productReference = CD6019921BA8CBB700849F1F /* SecurePhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD6019711BA8CBB600849F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = hefang;
+				TargetAttributes = {
+					CD6019781BA8CBB600849F1F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CD6019911BA8CBB700849F1F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CD6019781BA8CBB600849F1F;
+					};
+				};
+			};
+			buildConfigurationList = CD6019741BA8CBB600849F1F /* Build configuration list for PBXProject "SecurePhotos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD6019701BA8CBB600849F1F;
+			productRefGroup = CD60197A1BA8CBB600849F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD6019781BA8CBB600849F1F /* SecurePhotos */,
+				CD6019911BA8CBB700849F1F /* SecurePhotosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD6019771BA8CBB600849F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6019881BA8CBB700849F1F /* Main.storyboard in Resources */,
+				CD60198D1BA8CBB700849F1F /* LaunchScreen.xib in Resources */,
+				CD60198A1BA8CBB700849F1F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6019901BA8CBB700849F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD6019751BA8CBB600849F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6019BA1BA8CFB800849F1F /* RNCryptorEngine.m in Sources */,
+				CD6019C51BA8D0DF00849F1F /* MTViewController.m in Sources */,
+				CD6019AC1BA8CC9A00849F1F /* SSKeychainQuery.m in Sources */,
+				CD6019AB1BA8CC9A00849F1F /* SSKeychain.m in Sources */,
+				CD6019BB1BA8CFB800849F1F /* RNDecryptor.m in Sources */,
+				CD6019821BA8CBB700849F1F /* MTAppDelegate.m in Sources */,
+				CD6019BC1BA8CFB800849F1F /* RNEncryptor.m in Sources */,
+				CD60197F1BA8CBB600849F1F /* main.m in Sources */,
+				CD6019BF1BA8D06000849F1F /* MTPhotosViewController.m in Sources */,
+				CD6019C21BA8D09000849F1F /* MTPhotoCollectionViewCell.m in Sources */,
+				CD6019B91BA8CFB800849F1F /* RNCryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD60198E1BA8CBB700849F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6019991BA8CBB700849F1F /* SecurePhotosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD6019941BA8CBB700849F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6019781BA8CBB600849F1F /* SecurePhotos */;
+			targetProxy = CD6019931BA8CBB700849F1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD6019861BA8CBB700849F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD6019871BA8CBB700849F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD60198B1BA8CBB700849F1F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD60198C1BA8CBB700849F1F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD60199A1BA8CBB700849F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD60199B1BA8CBB700849F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD60199D1BA8CBB700849F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SecurePhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD60199E1BA8CBB700849F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SecurePhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD6019A01BA8CBB700849F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SecurePhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecurePhotos.app/SecurePhotos";
+			};
+			name = Debug;
+		};
+		CD6019A11BA8CBB700849F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SecurePhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecurePhotos.app/SecurePhotos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD6019741BA8CBB600849F1F /* Build configuration list for PBXProject "SecurePhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD60199A1BA8CBB700849F1F /* Debug */,
+				CD60199B1BA8CBB700849F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD60199C1BA8CBB700849F1F /* Build configuration list for PBXNativeTarget "SecurePhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD60199D1BA8CBB700849F1F /* Debug */,
+				CD60199E1BA8CBB700849F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD60199F1BA8CBB700849F1F /* Build configuration list for PBXNativeTarget "SecurePhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6019A01BA8CBB700849F1F /* Debug */,
+				CD6019A11BA8CBB700849F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD6019711BA8CBB600849F1F /* Project object */;
+}
